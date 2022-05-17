@@ -1,0 +1,40 @@
+.Partners {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Partners > img {
+  height: clamp(70px, 10vw, 80px);
+  max-width: 250px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .Partners {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .Partners > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 400px) {
+  .Partners {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+  }
+  .Partners > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 15vw;
+    max-width: 70%;
+  }
+}

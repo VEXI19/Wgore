@@ -1,0 +1,27 @@
+.AktualnosciUpdateMain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.AktualnosciUpdate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AktualnosciUpdateEditor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ImagePick {
+    max-width: 500px;
+}
+
+.ImagePick > input {
+    margin-bottom: 1em;
+}

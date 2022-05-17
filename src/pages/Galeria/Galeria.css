@@ -1,0 +1,15 @@
+.GaleriaBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GaleriaBlock > h1 {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.GaleriaBlock > span {
+    margin-bottom: 1em;
+    font-weight: 700;
+    text-align: center;
+}

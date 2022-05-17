@@ -1,0 +1,69 @@
+.FixedButtons {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* background-color: blue; */
+  z-index: 100;
+}
+
+.GoToTheTopButton {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  background-color: var(--orange);
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 6px var(--white);
+  border-style: double;
+}
+
+.GoToTheTopButton > img {
+  /* filter: var(--white-filter); */
+  width: 2.5em;
+  margin-bottom: 0.3em;
+
+  transition: all 0.2s ease;
+}
+
+.GoToTheTopButton:hover > img {
+  animation: shake 0.2s linear 0s 1;
+}
+
+@keyframes shake {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* @keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+} */

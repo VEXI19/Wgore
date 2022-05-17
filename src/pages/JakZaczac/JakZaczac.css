@@ -1,0 +1,42 @@
+.JakZaczacBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.JakZaczacBlock > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+/* .JakZaczacBlockFormatedText {
+    width: min(45vw, 700px);
+    margin-left: 4vw;
+} */
+
+.JakZaczacBlockFormatedText {
+    margin-top: 2em;
+    width: min(90vw, 900px);
+    text-align: center;
+}
+
+.JakZaczacBlockFormatedText > h3 > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.JakZaczacBlockFormatedText > h3 > ul > li {
+    width: fit-content;
+    /* background-color: blue; */
+}
+
+/* @media (min-width: 1000px) {
+    .JakZaczacBlockFormatedText {
+        width: 90vw;
+    }   
+} */

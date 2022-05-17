@@ -1,13 +1,125 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Smooch Sans", "Maven Pro", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --black: black;
+  --white: white;
+  --orange: #f0490e;
+  --phone: "500px";
+
+  --orange-filter: "brightness(0) saturate(100%) invert(36%) sepia(60%) saturate(2901%) hue-rotate(353deg) brightness(93%) contrast(102%)";
+  --white-filter: "brightness(0) saturate(100%) invert(100%) sepia(49%) saturate(4%) hue-rotate(245deg) brightness(106%) contrast(100%)";
+  --translate-left-right: -100%;
+
+  --header-shadow: 0px 0px 10px rgb(92, 92, 92);
+
+  --nav-text: clamp(20px, 2.3vw, 30px);
 }
 
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-size: clamp(50px, 7vw, 60px);
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.h12 {
+  font-size: clamp(30px, 6vw, 40px);
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(25px, 5vw, 30px);
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: clamp(21px, 4vw, 23px);
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+h5 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+.text-secondary-header {
+  font-weight: 800;
+  transform: scale(1.6);
+}
+
+b {
+  font-weight: 800;
+}
+
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: clamp(15px, 5vw, 20px);
+  }
+
+  h2 {
+    font-size: clamp(19px, 5vw, 25px);
+  }
+
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: clamp(30px, 14vw, 50px);
+  }
+}
+
+.text-white {
+  color: white;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.img-white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(14%)
+    hue-rotate(212deg) brightness(104%) contrast(104%);
+}
+
+.img-black {
+  filter: brightness(0) saturate(100%);
+}
+
+.img {
+  width: clamp(23px, 7vw, 27px);
 }

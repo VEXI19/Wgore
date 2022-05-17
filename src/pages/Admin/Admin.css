@@ -1,0 +1,56 @@
+.Admin {
+    display: flex;
+    flex-direction: column;
+}
+
+.NotLoggedIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.NotLoggedIn > input {
+  font-size: clamp(21px, 4vw, 23px);
+  font-family: "Smooch Sans", "Maven Pro", sans-serif, -apple-system,
+  BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin: 0.2em 0;
+  width: min(90vw, 300px);
+}
+
+.LogInButton > h3 {
+    font-weight: 800;
+    color: white;
+}
+
+.LogInButton {
+    padding: 0.5em 1em;
+    background-color: var(--orange);
+    border-radius: 0.5em;
+    margin-top: 0.2em;
+    cursor: pointer;
+}
+
+.AdminRight {
+    width: 100%;
+    padding: 1em 1.5em;
+
+}
+
+.ErrorText {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.AdminMain {
+    display: flex;
+    flex-direction: row;
+}
+
+.AdminDanger {
+    background-color: red;
+    text-align: center;
+    padding: 0.3em 0;
+}

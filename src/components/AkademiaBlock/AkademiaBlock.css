@@ -1,0 +1,28 @@
+.AkademiaBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.AkademiaBlockHeader {
+  text-align: center;
+}
+
+.AkademiaBlockHeader > h2 {
+  font-weight: 700;
+}
+
+.AkademiaText {
+  margin: 1em 0;
+  white-space: pre-line;
+  max-width: 1100px;
+}
+
+@media (min-width: 1000px) {
+  .AkademiaText {
+    margin-bottom: 2em;
+  }
+}
